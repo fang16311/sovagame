@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+* {font-family: "微軟正黑體";}
+body {
+    background: #24085f;}	
+
+/*主頁未登入*/
+/**/
+.header { height: 80px; background:#000 url(../images/index_03.jpg) center no-repeat;-moz-background-size: cover;background-size: cover; border-bottom: 1px solid #9663e8;}
+.header .container .head .logo img {margin: 10px 0 0 0;}
+
+@media (max-width: 320px){
+.header {width: 100%; margin: 0 auto; border-bottom: 1px solid #eac060;}
+.header .container .head .logo {width: 320px;}
+.header .container .head .logo img {margin:0;}
+.header .container .head .headright .language {padding : 0}
+}
+@media (min-width: 321px) and (max-width: 574px) {
+.header {width: 100%;  margin: 0 auto; border-bottom: 1px solid #eac060;}	
+.header .container .head .logo img {margin: 0;}
+.header .container .head .headright { width: 130px; margin:0; padding: 0 0 0 6px; margin: 0 15% 0 0;}
+}
+@media (min-width: 575px) and (max-width: 767px) {
+.header { width: 100%; margin: 0 auto; border-bottom: 1px solid #eac060; }	
+.header .container .head .logo img {margin: 0;}	
+.header .container .head .headright { width: 130px; margin:0; padding: 55px 0 0 6px;}	
+}
+@media (min-width: 768px) and (max-width: 992px) {
+.header { width: 100%; border-bottom: 1px solid #eac060;}	
+.header .container .head .logo img {margin:  0;}	
+.header .container .head .headright { width: 130px; margin:0; padding: 55px 0 0 6px;}
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+.header { margin: 0 auto;}	
+}
+
+
+
+/*廣告slider*/
+.indexbanner { position: relative; overflow: hidden; margin:0;}
+.indexbanner > .container {padding: 0;}
+.indexbanner .carousel img {
+	min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%; 
+}}
+@media (max-width: 767px) {.indexbanner { position: relative; overflow: hidden; margin: 0;}}
+@media (min-width: 768px) and (max-width: 992px) {.indexbanner { position: relative; overflow: hidden; margin: 0;}}
+@media (max-width: 768px) {.indexbanner .container{padding: 0}}
+
+/*content*/
+.img-rwd {display: block; width: 100%; height: auto;}
+.banner {width: 100%; height: 70px;background: #000;}
+.typetitle {font-weight: bolder; font-size:1.6em;padding-bottom: 9px;margin: 40px 0 20px;border-bottom: 1px solid #eee;}
+
+.mid_content {padding-bottom: 60px;}
+.mid_content .row span {color:#131313;  display: block; padding:13px 0 10px 0; line-height: 7px; font-size: 1em;}
+
+.gamehover { width: 300px; height: 189px; background: url(../images/listlihover.png) no-repeat; position: absolute; left:20px; top:5px; display: none;}
+.gamehover .enter{ width: 189px; height: 32px; background: #da1717; display: block; margin:36px 0 0 32px; text-align: center; line-height: 30px; font-size: 1em; border-radius: 4px; border: 1px solid #353535;color: #fff;}
+.gamehover .free{ width: 189px; height: 32px; background: #eeeeee; display: block; margin:22px 0 0 32px; text-align: center; line-height: 30px; font-size: 1em; border-radius: 4px; border: 1px solid #353535;color: #000;}
+ .title{ height: 30px; margin: 0 auto; width: 100%; display: block; text-align: center; line-height: 34px; color: #000; font-size: 1em;}
+
+/*頁尾*/	
+.footer{ min-height: 85px; background:#000; padding-top: 35px; border-top: 1px solid #8d6cea}
+
+.indexhr {width: 100%;}
+.myhr { height: 1px; border: 0; margin:18px 0 8px 0;}
+@media (max-width: 767px){.indexhr{ float: left; }}
+@media (min-width: 768px) and (max-width: 1200px){.indexhr{ float: left; }}
+
+.footer .container .copyright{ width:100%; line-height: 15px; color: #ab7946; font-size: 12px; font-family: Arial; text-align: center; font-weight: bold; padding: 0 0 10px; }
+
+@media(max-width: 350px){
+.footer .link,.footer .link a,.copyright{ float: left; padding: 0 8% 0 20%;}
+}
+@media(min-width: 351px) and (max-width: 767px){
+.footer .link,.footer .link a,.copyright{ width: 95%; float: left; padding: 0 5% 0 5%;}
+}
+@media (min-width: 768px) and (max-width: 992px) {
+.footer .link,.copyright{ float: left;}
+}	
+@media (min-width: 993px) and (max-width: 1200px) {
+.footer .container .link { margin: 5px 0 0 8%;}
+.footer .link,.copyright{ float: left; padding: 0 5% 0 5%;}
+}
